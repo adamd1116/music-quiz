@@ -8,10 +8,8 @@ songs = {
 
 song_artist = ['kanye']
 
-def rand_selection():
-    return random.randint(0,6)
-
-#chosenSong = songs[random.choice(song_artist)]
+def rand_selection(x):
+    return random.choice(x)
 
 with open('password.txt', 'r') as f:
     if password == f.read():
@@ -21,5 +19,5 @@ with open('password.txt', 'r') as f:
         print("\n\tIncorrect")
         passw_correct = False
 
-test = list(songs.keys())
-print(test)
+if passw_correct == True:
+    chosen 
