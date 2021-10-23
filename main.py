@@ -33,13 +33,9 @@ with open('password.txt', 'r') as f:
 if passw_correct == True:
     pass
 
-print(choice1_m)
-
 for i in range(len(choice1_m)):
     if choice1[i].isupper() != True and choice1[i] != ' ' and i != 0:
         choice1_m[i] = '_'
-
-print(choice1_m)
 
 guessSongName = "".join(choice1_m)
 
