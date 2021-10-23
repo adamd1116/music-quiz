@@ -63,7 +63,7 @@ while chances > 0 and passw_correct == True:
             chances-=1
 
 if chances == 0 or win == True:
-    with open('scores.txt', 'a') as s:
+    with open('scores.txt', 'a+') as s:
         s.write("-------------------------------")
         s.write(f"\n\tName: {name}")
         s.write(f"\n\tScore: {score}")
