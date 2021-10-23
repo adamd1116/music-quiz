@@ -33,20 +33,13 @@ with open('password.txt', 'r') as f:
 if passw_correct == True:
     pass
 
-#Loop has a "bug" where if a letter appears twice in a song name and they aren't next to eachother, 
-#only one letter is hidden.
-#I can not be bothered to fix it. It is a feature not a bug
+print(choice1_m)
+
 for i in range(len(choice1_m)):
-    if i == 0:
-        pass
-    else:
-        choiceindex = choice1.find(choice1[i])
-        if choice1[i] != " " and choice1[i].isupper() != True:
-            choice1_m[choiceindex] = "_"
-            if i < len(choice1_m)-1 and choice1[i] == choice1[i+1]:
-                choice1_m[choiceindex+1] = "_"
-        else:
-            choice1_m[choiceindex] = choice1[i]
+    if choice1[i].isupper() != True and choice1[i] != ' ' and i != 0:
+        choice1_m[i] = '_'
+
+print(choice1_m)
 
 guessSongName = "".join(choice1_m)
 
