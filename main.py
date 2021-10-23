@@ -1,7 +1,7 @@
 import random
 
-password = input("\n\tEnter your password: ")
-name  = input("\tEnter your name: ")
+name  = input("\n\tEnter your name: ")
+password = input("\tEnter your password: ")
 chances = 2
 win = False
 score = 0
@@ -25,7 +25,6 @@ choice1_m = list(choice1)
 
 with open('password.txt', 'r') as f:
     if password == f.read():
-        print("\n\tCorrect")
         passw_correct = True
     else:
         print("\n\tIncorrect, try again")
