@@ -11,10 +11,15 @@ songs = {
     "Future": "Solo",
     "Pop Smoke": "30",
     "Kid Cudi": "Mr. Rager",
-    "Future ": "Mask Off",
-    "Polo G": "Pop Out",
     "French Montana": "Unforgettable",
     "Eminem": "Lose Yourself",
+    "Travis Scott": "Goosebumps",
+    "Kodak Black": "Tunnel Vision",
+    "Lil Uzi Vert": "Money Longer",
+    "Juice WRLD": "Robbery",
+    "Roddy Rich": "The Box",
+    "Lil Tjay": "F.N",
+    "YNW Melly": "223's",
 }
 
 songNameIndex = random.randint(0,len(songs)-1)
