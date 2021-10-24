@@ -38,7 +38,7 @@ if passw_correct == True:
     pass
 
 for i in range(len(choice1_m)):
-    if choice1[i].isupper() != True and choice1[i] != ' ' and i != 0:
+    if choice1[i].isupper() != True and choice1[i] != ' ' and i != 0 or choice1[i-1] == '.':
         choice1_m[i] = '_'
 
 guessSongName = "".join(choice1_m)
@@ -60,8 +60,8 @@ while chances > 0 and passw_correct == True:
             break
     else:
         if chances == 2:
-            print(f"\n\tIncorrect, you have {chances} more chances")
             chances-=1
+            print(f"\n\tIncorrect, you have {chances} more chance")
         else:
             print(f"\n\tIncorrect! The answer was: {song_names[songNameIndex]}")
             chances-=1
